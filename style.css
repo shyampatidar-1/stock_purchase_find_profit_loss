@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:ital,wght@0,500;1,400&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color:#1e293b;
+    color: white;
+    margin-top: 6rem;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+
+label {
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+input {
+   padding: 1rem;
+   width:30%
+}
+
+#btn {
+    padding: 1rem;
+    width:32.5%;
+    background-color:#2563eb;
+    color:white;
+}
+#output{
+    display: block;
+    margin: auto;
+    padding-top:1.5rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #db2777;
+    
+}

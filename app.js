@@ -11,17 +11,18 @@ function btnClick() {
     var ip = Number(initialPrice.value);
     var qty = Number(stoksQuantity.value);
     var curr = Number(currentPrice.value);
-     if(ip && qty && curr)
-    calculateProfitAndLoss(ip, qty, curr);
+    if (ip && qty && curr)
+        calculateProfitAndLoss(ip, qty, curr);
     else
-    output.innerText="Please enter all the fields 😲😲 : )"
+        output.innerText = "Please enter all the fields 😲😲 : )"
 
 }
 
 function calculateProfitAndLoss(initial, quantity, current) {
     if (initial > current) { // loss logic here
         var loss = (initial - current) * quantity;
-        var lossPercentage = (loss / initial) * 100;
+        var loss1 = (initial - current);
+        var lossPercentage = (loss1 / initial) * 100;
 
         // console.log(`Hey the loss is ${loss} and the percent is ${lossPercentage}%`)
 
@@ -29,7 +30,8 @@ function calculateProfitAndLoss(initial, quantity, current) {
 
     } else if (current > initial) { // profit logic here
         var profit = (current - initial) * quantity;
-        var profitPercentage = (profit / initial) * 100;
+        var profit1 = (current - initial);
+        var profitPercentage = (profit1 / initial) * 100;
 
         // console.log(`Hey the profit is ${profit} and the percent is ${profitPercentage}%`)
 
@@ -44,7 +46,7 @@ function calculateProfitAndLoss(initial, quantity, current) {
 // calculateProfitAndLoss(100,10,10);
 // calculateProfitAndLoss(50,10,100)
 // calculateProfitAndLoss(10,10,10)
- 
+
 function showOutput(message) {
 
     output.innerText = message;

@@ -26,7 +26,7 @@ function calculateProfitAndLoss(initial, quantity, current) {
 
         // console.log(`Hey the loss is ${loss} and the percent is ${lossPercentage}%`)
 
-        showOutput(`Whoops!! Your loss is ${loss} and the percentage is ${lossPercentage}% 😥😥 : )`);
+        showOutput(`Whoops!! Your loss is ${loss?.toFixed(2)} and the percentage is ${lossPercentage?.toFixed(2)}% 😥😥 : )`);
 
     } else if (current > initial) { // profit logic here
         var profit = (current - initial) * quantity;
@@ -35,7 +35,7 @@ function calculateProfitAndLoss(initial, quantity, current) {
 
         // console.log(`Hey the profit is ${profit} and the percent is ${profitPercentage}%`)
 
-        showOutput(`Hey the profit is ${profit} and the percentage is ${profitPercentage}% 🥳🥳`)
+        showOutput(`Hey the profit is ${profit?.toFixed(2)} and the percentage is ${profitPercentage?.toFixed(2)}% 🥳🥳`)
 
     } else { //  the rest logic 
         // console.log("No pain No gain! and no gain no pain")
